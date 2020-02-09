@@ -11,6 +11,13 @@ body {
   margin-top: 30px;
 }
 
+header {
+  letter-spacing: 8px;
+  padding: 10px;
+  text-align: right;
+  opacity: .5;
+}
+
 .banner {
   font-size: 24px;
   letter-spacing: 4px;
@@ -20,7 +27,15 @@ body {
   text-align: center;
 }
 
+.bday-input {
+  font-size: 32px;
+}
+
 .banner2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center
   font-size: 24px;
   letter-spacing: 4px;
   background-color: #fff;
@@ -30,48 +45,56 @@ body {
   margin-top: 10px;
 }
 
-
-.bday-input {
-  font-size: 32px;
-}
-
-#display {
+#bornDisplay {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: space-between;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  /* align-content: space-between; */
 }
-
 #born {
   padding: 20px;
 }
-
-#today {
-  padding: 20px;
-}
-
-#died {
-  padding: 20px;
-}
-
-.timeSpans {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
 #timeSince {
   padding: 20px;
 }
 
+#nowDisplay {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  /* align-content: space-between; */
+}
+#today {
+  padding: 20px;
+}
 #timeNow {
   padding: 20px;
 }
 
-
+#diedDisplay {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  /* align-content: space-between; */
+}
+#died {
+  padding: 20px;
+}
 #timeToGo {
   padding: 20px;
 }
+
+
+
+/* .diedDisplay { */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   justify-content: space-around; */
+/* } */
+
+
+
+
 
 h1 {
   font-size: 72px;
