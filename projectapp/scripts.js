@@ -24,6 +24,8 @@ function calculateTime () {
   const bday = document.getElementById("name").value
   const bdayMoment = moment(bday, "MM/DD/YYYY");
 
+  dummy();
+
   let daysAgo = bdayMoment.diff(moment(), 'days')
   let borntime = moment().add(daysAgo, 'seconds').format('h:mm:ss a')
 
