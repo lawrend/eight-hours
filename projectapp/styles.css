@@ -6,9 +6,9 @@ body {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-align: center;
   background-color: #eee;
- margin-left: 0px;
- margin-right: 0px;
- margin-top: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 30px;
 }
 
 .banner {
@@ -20,13 +20,59 @@ body {
   text-align: center;
 }
 
+.banner2 {
+  font-size: 24px;
+  letter-spacing: 4px;
+  background-color: #fff;
+  padding: 20px;
+  min-height: 20vh;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
 .bday-input {
   font-size: 32px;
 }
 
-#display2 {
+#display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+#born {
   padding: 20px;
 }
+
+#today {
+  padding: 20px;
+}
+
+#died {
+  padding: 20px;
+}
+
+.timeSpans {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#timeSince {
+  padding: 20px;
+}
+
+#timeNow {
+  padding: 20px;
+}
+
+
+#timeToGo {
+  padding: 20px;
+}
+
 h1 {
   font-size: 72px;
   color: #227;
