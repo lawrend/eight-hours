@@ -12,6 +12,7 @@
     <!-- <meta http-equiv="refresh" content="3" /> -->
 
     <link rel="stylesheet" href="styles.css">
+<link href='https://fonts.googleapis.com/css?family=Jaldi' rel='stylesheet'>
     <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
   </head>
@@ -19,12 +20,20 @@
   <body>
 
     <header>every second is a day</header>
-    <div class="banner">
-      <h1>Eight Hours</h1>
-      <form id="bday-frm">
-        <p class="bday-input" >Birthday: <input class="bday-input" type="text" id="name" name="bday" /><input class="bday-input" type="button" value="check time" onClick="calculateTime()" />
-        </p>
+    <div class="inlay-holder">
+      <div class="plaque">
+        <div class="plaque-letters">
+      Eight Hours
+        </div>
+      </div>
+      <div class="overlay">
+        <div class="payam-title">
+          <form id="bday-frm" onSubmit="() => calculateTime">
+        <span class="bday-input" >Birthday: <input class="bday-input" type="text" id="name" name="bday" /><input class="bday-input" type="button" value="check time" onClick="calculateTime()" />
+        </span>
       </form>
+        </div>
+      </div>
     </div> <!-- banner --> 
 
     <div class="banner2">
@@ -41,6 +50,7 @@
         <div id="timeToGo"></div>
       </div><!--diedDisplay-->
     </div><!--banner2-->
+
     <footer id="footer-div">
       <br/>
     </footer>

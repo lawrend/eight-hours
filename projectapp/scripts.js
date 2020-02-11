@@ -1,18 +1,15 @@
 const lifespan = 28800;
 // 78 years 310 days;
 
-
 secondsConverter = (secs) => {
   const minutes = Math.floor(secs/60);
   const remainingSeconds = secs % 60;
   const hours = Math.floor(minutes/60);
   const remainingMinutes = minutes % 60;
-  return `${hours} hours, ${remainingMinutes} minutes, ${remainingSeconds} seconds`
-
+  return `${hours} hrs, ${remainingMinutes} mins, ${remainingSeconds} secs`
 }
 
 dummy = () => {
-  // displayDiv.innerText = "dummy";
   let nowtimes = moment().format("h:mm:ss a");
   document.getElementById("today").innerText = `${nowtimes}`;
 }
@@ -34,7 +31,7 @@ function calculateTime () {
   document.getElementById("timeNow").innerText = `now`;
   document.getElementById("timeToGo").innerText = `${remainingTime} days remain`;
   document.getElementById("footer-div").innerHTML =
-    `<img src="./Squiggle-cover.png" height=80 width=200 alt="squigglewerkz logo"/><br/><span class="footer-text">You done been Squigged!</span>`;
+    `<img src="./Squiggle-cover.png" height=80 width=200 alt="squigglewerkz logo"/><br/><span class="footer-text">&copy2020 squigglewerkz</span>`;
 }
 
 
