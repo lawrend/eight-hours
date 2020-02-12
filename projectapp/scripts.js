@@ -15,7 +15,7 @@ dummy = () => {
 }
 
 function calculateTime () {
-  const bday = document.getElementById("name").value
+  const bday = document.getElementById("bday-text-box").value
   const bdayMoment = moment(bday, "MM/DD/YYYY");
 
   dummy();
@@ -25,15 +25,15 @@ function calculateTime () {
 
   const remainingTime = 28800 + daysAgo;
   let diedtime = moment().add(remainingTime, 'seconds').format("h:mm:ss a")
-  document.getElementById("born").innerText = `${borntime}\n  ${secondsConverter(daysAgo * -1)} lived`;
-  document.getElementById("died").innerText = `${diedtime}\n${secondsConverter(remainingTime)} remain`;
-  document.getElementById("timeSince").innerText = `Born ${daysAgo * -1} days ago`;
-  document.getElementById("timeNow").innerText = `now`;
-  document.getElementById("timeToGo").innerText = `${remainingTime} days remain`;
+  document.getElementById("born").innerText = `${borntime}`;
+  document.getElementById("died").innerText = `${diedtime}\n`;
+  document.getElementById("timeSince").innerText = `${secondsConverter(daysAgo * -1)}`;
+  // document.getElementById("timeNow").innerText = `now`;
+  document.getElementById("timeToGo").innerText = `${secondsConverter(remainingTime)}`;
   document.getElementById("footer-div").innerHTML =
-    `<img src="./Squiggle-cover.png" height=80 width=200 alt="squigglewerkz logo"/><br/><span class="footer-text">&copy2020 squigglewerkz</span>`;
+    `<span class="footer-text">&copy2020 squigglewerkz</span>`;
 }
-
+// <img src="./Squiggle-cover.png" height=80 width=200 alt="squigglewerkz logo"/><br/>
 
 // age in years
   // let diedtime = moment(bday, "YYYYMMDD").fromNow()

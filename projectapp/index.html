@@ -12,9 +12,11 @@
     <!-- <meta http-equiv="refresh" content="3" /> -->
 
     <link rel="stylesheet" href="styles.css">
-<link href='https://fonts.googleapis.com/css?family=Jaldi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Jaldi' rel='stylesheet'>
     <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <script src="rolldate.min.js"></script>
+
   </head>
 
   <body>
@@ -23,37 +25,42 @@
     <div class="inlay-holder">
       <div class="plaque">
         <div class="plaque-letters">
-      Eight Hours
+          Eight Hours
         </div>
       </div>
-      <div class="overlay">
-        <div class="payam-title">
-          <form id="bday-frm" onSubmit="() => calculateTime">
-        <span class="bday-input" >Birthday: <input class="bday-input" type="text" id="name" name="bday" /><input class="bday-input" type="button" value="check time" onClick="calculateTime()" />
-        </span>
-      </form>
-        </div>
-      </div>
-    </div> <!-- banner --> 
 
-    <div class="banner2">
-      <div id='bornDisplay'>
-        <div id="born"></div>
-        <div id="timeSince"></div>
+      <div class="overlay flex-container-column" >
+        <div class="top-dog flex-container-column">
+          <!-- <form id="bday-frm" > -->
+            <div class="flex-container">Birthday</div> <br />
+            <div class="flex-container"><input  id="bday-text-box" type="text" id="bday" name="bday" /></div> <br />
+            <div class="flex-container"> <button id="bday-button" onClick="calculateTime()">Check</button></div><br />
+            
+          <!-- </form> -->
+        </div><!--top-dog flex-container-column-->
+      </div><!--overlay flex-continer-column-->
+    </div> <!-- inlay-holder --> 
+
+    <div class="banner2 flex-continer-column">
+
+      <div id='bornDisplay' class=flex-container>
+        <div id="born" class=flex-container></div>
+        <div id='today' class=flex-container></div>
+        <div id="died" class=flex-container></div>
       </div><!-- bornDisplay --> 
-      <div id='nowDisplay'>
-        <div id='today'></div>
-        <div id="timeNow"></div>
+
+      <div id='nowDisplay' class=flex-container>
+        <div id="timeSince" class=flex-container></div>
+        <div id="timeNow" class=flex-container></div>
+        <div id="timeToGo" class=flex-container ></div>
       </div><!--nowDisplay-->
-      <div id="diedDisplay">
-        <div id="died"></div>
-        <div id="timeToGo"></div>
-      </div><!--diedDisplay-->
+      <!-- <div id="diedDisplay" class=flex-container> -->
+      <!-- </div><!--diedDisplay--1>-->
     </div><!--banner2-->
 
     <footer id="footer-div">
       <br/>
     </footer>
-      <script>dummy();</script>
+    <script>dummy();</script>
   </body>
 </html>

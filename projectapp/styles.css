@@ -35,9 +35,21 @@ footer {
   opacity: .7;
 }
 
-.bday-input {
-  font-size: 32px;
+#bday-text-box {
+  height: 2vh;
 }
+#bday-button {
+  height: 4vh;
+  width: 100vw;
+  background-color: orange;
+  border: none;
+  font-size: 20px;
+  
+  /* font-size: 40px; */
+}
+/* .bday-input { */
+/*   font-size: 32px; */
+/* } */
 
 .banner2 {
   display: flex;
@@ -55,9 +67,9 @@ footer {
 }
 
 #bornDisplay {
-  display: flex;
-  flex-direction: column;
-  max-width: 240px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* max-width: 240px; */
 }
 #born {
   padding: 20px;
@@ -67,9 +79,9 @@ footer {
 }
 
 #nowDisplay {
-  display: flex;
-  flex-direction: column;
-  max-width: 240px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* max-width: 240px; */
 }
 #today {
   padding: 20px;
@@ -79,9 +91,9 @@ footer {
 }
 
 #diedDisplay {
-  max-width: 240px;
-  display: flex;
-  flex-direction: column;
+  /* max-width: 240px; */
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 #died {
   padding: 20px;
@@ -97,18 +109,24 @@ footer {
     display: flex;
     webkit-flex-direction: column;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
 }
 .inlay-holder {
-
     min-height: 100px;
     width: 100%;
     position: relative;
+    align-items: center;
 }
 .flex-container {
+    margin: 20px;
     display: -webkit-flex;
     display: flex;
     webkit-flex-direction: row;
     flex-direction: row;
+    align-items: center;
+    /* text-align: center; */
 }
 .plaque,
 .overlay {
@@ -118,7 +136,7 @@ footer {
 }
 .plaque {
     font-weight: 200;
-    opacity: .1;
+    opacity: .3;
     text-transform: uppercase;
     justify-content: center; 
     background-color: #FFF;
@@ -126,9 +144,10 @@ footer {
 }
 .plaque-letters {
     padding: 20px;
-    opacity: .3;
+    /* opacity: ; */
     font-size: 14.5vw;
-    color: #227;
+    /* color: #227; */
+    color: orange;
 }
 
 .overlay {
@@ -141,8 +160,8 @@ footer {
     z-index: 10;
 }
 
-.payam-title {
-    font-size: 22px;
+.top-dog {
+    font-size: 3vh;
     opacity: .7;
     letter-spacing: 17px;
     font-weight: 200;
