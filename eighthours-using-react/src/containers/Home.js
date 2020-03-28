@@ -12,15 +12,18 @@ constructor(props) {
     }
   }
 
+  handleChange = (e) => {
+    this.setState({bday: e.target.value})
+  }
+
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.value);
   }
   render() {
     return (
       <div className='home'>
-      <BdayInput bday={this.state.bday} onsubmit={this.handleSubmit}/>
-      <Link to="/results">
+      <BdayInput bday={this.state.bday} onSubmit={this.handleSubmit} handleChange={this.handleChange}/>
+      <Link to={`results/${this.state.bday}`}>
         RESULTS
       </Link>
     </div>

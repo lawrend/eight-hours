@@ -10,7 +10,7 @@ class Routes extends Component {
     return (
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/results" component={ResultsDisplay} />
+        <Route path="/results/:bday" component={ResultsDisplay} />
         <Route component={ErrorRoute} />
       </Switch>
         )

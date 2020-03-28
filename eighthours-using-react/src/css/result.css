@@ -1,0 +1,8 @@
+.results-display {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container {
+  display: flex;
+}

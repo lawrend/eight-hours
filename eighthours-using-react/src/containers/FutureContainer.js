@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import DeathTime from '../components/DeathTime.js';
+
+
 class FutureContainer extends Component {
   render() {
     return (
       <div className="future-container">
-        I am the future
+        <DeathTime bday={this.props.bday} />
       </div>
     )
   }

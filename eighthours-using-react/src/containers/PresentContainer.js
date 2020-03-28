@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+// import moment from 'moment';
+import TodayDate from '../components/TodayDate';
+import TodayTime from '../components/TodayTime';
+
 class PresentContainer extends Component {
   render() {
+    // let nowish = moment().format('hh:mm:ss a')
     return (
       <div className="present-container">
-        I am the present
+        <TodayTime />
       </div>
     )
   }

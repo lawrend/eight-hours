@@ -1,17 +1,8 @@
 .App {
+
+  font-size: calc(10px + 2vh);
   text-align: center;
 }
-
-/* .App-logo { */
-/*   height: 40vmin; */
-/*   pointer-events: none; */
-/* } */
-
-/* @media (prefers-reduced-motion: no-preference) { */
-/*   .App-logo { */
-/*     animation: App-logo-spin infinite 20s linear; */
-/*   } */
-/* } */
 
 .App-header {
   background-color: #282c34;
@@ -27,7 +18,18 @@
 .bday-input {
   color: green;
   font-size: calc(10px + 2vh);
+  margin: 15px;
+  width: 20vw;
+  text-align: center;
 }
+.bday-input-label {
+  width: 20vw;
+}
+
+.bday-input-form {
+  /* font-size: calc(10px + 2vh); */
+}
+
 
 .home {
   display: flex;
