@@ -29,7 +29,4 @@ constructor(props) {
   }
 }
 export default Home;
-      // <Link to={`results/${this.state.bday}`}>
-      //   RESULTS
-      // </Link>
 

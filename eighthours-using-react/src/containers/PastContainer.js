@@ -8,6 +8,7 @@ class PastContainer extends Component {
     const bdayMoment = moment(bday, "MM/DD/YYYY");
     const daysAgo = bdayMoment.diff(moment(), 'days')
     console.log("days ago: " + daysAgo)
+    console.log("percentage: " + -(daysAgo/28880))
 
     const birthtime = moment().add(daysAgo, 'seconds').format('h:mm:ss a')
     return birthtime;

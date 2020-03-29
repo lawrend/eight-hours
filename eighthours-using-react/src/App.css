@@ -15,26 +15,27 @@
   color: white;
 }
 
-.bday-input {
-  color: green;
-  font-size: calc(10px + 2vh);
-  margin: 15px;
-  width: 20vw;
-  text-align: center;
-}
-.bday-input-label {
-  width: 20vw;
-}
-
-.bday-input-form {
-  /* font-size: calc(10px + 2vh); */
-}
-
-
 .home {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 15vh;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vh);
+  color: white;
+  background-color: #282c34;
+}
+
+.footer > a {
+  color: white;
 }
 /* .App-link { */
 /*   color: #61dafb; */
