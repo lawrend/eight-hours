@@ -8,7 +8,7 @@ class Home extends Component {
 constructor(props) {
     super(props)
     this.state = {
-      bday: 'MM/DD/YYYY',
+      bday: '',
     }
   }
 
@@ -23,12 +23,13 @@ constructor(props) {
     return (
       <div className='home'>
       <BdayInput bday={this.state.bday} onSubmit={this.handleSubmit} handleChange={this.handleChange}/>
-      <Link to={`results/${this.state.bday}`}>
-        RESULTS
-      </Link>
     </div>
 
       )
   }
 }
 export default Home;
+      // <Link to={`results/${this.state.bday}`}>
+      //   RESULTS
+      // </Link>
+

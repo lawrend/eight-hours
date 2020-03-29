@@ -1,8 +1,11 @@
 .results-display {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .flex-container {
+  margin: 10px;
   display: flex;
 }
