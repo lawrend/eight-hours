@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import BdayInput from '../components/BdayInput.js'
-import TodayTime from '../components/TodayTime.js'
-import TodayDate from '../components/TodayDate.js'
-import { Link } from 'react-router-dom';
 
 class Home extends Component {
-constructor(props) {
+  constructor(props) {
     super(props)
     this.state = {
       bday: '',
@@ -19,11 +16,12 @@ constructor(props) {
   handleSubmit = (e) => {
     e.preventDefault();
   }
+
   render() {
     return (
       <div className='home'>
-      <BdayInput bday={this.state.bday} onSubmit={this.handleSubmit} handleChange={this.handleChange}/>
-    </div>
+        <BdayInput bday={this.state.bday} onSubmit={this.handleSubmit} handleChange={this.handleChange}/>
+      </div>
 
       )
   }

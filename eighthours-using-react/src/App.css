@@ -1,5 +1,4 @@
 .App {
-
   font-size: calc(10px + 2vh);
   text-align: center;
 }
@@ -16,9 +15,9 @@
 }
 
 .home {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
 }
 
 .footer {
