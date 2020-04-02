@@ -1,30 +1,11 @@
 import React, { Component } from 'react';
-import BdayInput from '../components/BdayInput.js'
+import { Link } from 'react-router-dom';
 
-class Home extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      bday: '',
-    }
-  }
+export default props => (
 
-  handleChange = (e) => {
-    this.setState({bday: e.target.value})
-  }
-
-  handleSubmit = (e) => {
-    e.preventDefault();
-  }
-
-  render() {
-    return (
-      <div className='home'>
-        <BdayInput bday={this.state.bday} onSubmit={this.handleSubmit} handleChange={this.handleChange}/>
-      </div>
-
-      )
-  }
-}
-export default Home;
+  <div className='home'>
+    <Link to="/eight-hours">Eight Hours</Link><br />
+    <Link to="/ingredients-checker">Ingredients Checker</Link>
+  </div>
+  )
 

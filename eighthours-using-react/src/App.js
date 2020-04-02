@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <p>
-            Each Second is a Day
+            What you wanna do?
           </p>
         </header>
         <Routes />
