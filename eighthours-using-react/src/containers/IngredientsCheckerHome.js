@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import TodayDate from '../components/TodayDate.js';
+import CheckerInputForm from '../components/CheckerInputForm.js';
+import CheckerResultsContainer from '../containers/CheckerResultsContainer.js'
+import CheckerIngredientResult from '../components/CheckerIngredientResult.js';
 
 class IngredientsCheckerHome extends Component {
   constructor(props) {
@@ -9,18 +10,24 @@ class IngredientsCheckerHome extends Component {
       ingToCheck: "",
     }
   }
+  handleChange = (e) => {
+    this.setState({ingToCheck: e.target.value})
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+  }
 
 
   render() {
-    console.log("da fook")
     return (
-      <div className="ingredients-checker-home">
-        <h1>HEY</h1>
-       <TodayDate />
-        <div className="footer">What</div>
+      <div className="ingredients-checker-container">
+        <CheckerInputForm ingToCheck={this.state.ingToCheck} onSubmit={this.handleSubmit} handleChange={this.handleChange} />
+        <CheckerResultsContainer results={this.state.ingToCheck.toLowerCase().split(', ')}/>
       </div>
-    )
+      )
   }
 }
 
 export default IngredientsCheckerHome;
+

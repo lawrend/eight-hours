@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import BdayInput from '../components/BdayInput.js'
-import { Link } from 'react-router-dom';
 
 class EightHoursContainer extends Component {
   constructor(props) {
@@ -21,18 +20,8 @@ class EightHoursContainer extends Component {
   render() {
     return (
 
-      <div className='eight-hours-header'>
-        <header className="App-header">
-          <p>
-            Each Second is a Day
-          </p>
-        </header>
-
+      <div className='eight-hours-container'>
         <BdayInput bday={this.state.bday} onSubmit={this.handleSubmit} handleChange={this.handleChange}/>
-        <div className="footer">
-          <Link to="/ingredients-checker">Ingredients Checker</Link>
-          <br /><Link to="/">Home</Link>
-        </div>
       </div>
 
       )
