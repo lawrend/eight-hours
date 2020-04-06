@@ -1,26 +1,25 @@
-.flex-container {
-  text-align: center;
-  /* margin: 10px; */
-  display: flex;
-  /* justify-content: space-between; */
-}
+/* CSS FOR 8 HOURS */
 
 .eight-hours-container {
-  font-size: 40px;
-  
 }
 
 /* BDAY INPUT */
-.bday-input-container {
-  /* display: flex; */
-  /* flex-direction: column; */
-}
-
 .bday-input-form-container {
 
-  text-align: center;
-  /* display: flex; */
-  /* flex-direction: column; */
+  /* text-align: center; */
+}
+
+.bday-input-form {
+}
+
+.bday-input-label {
+  width: 40vw;
+  font-size: 40px;
+  margin: 16px;
+}
+
+#results-button {
+  visibility: hidden;
 }
 
 .bday-input-field {
@@ -31,51 +30,42 @@
   text-align: center;
 }
 
-.bday-input-label {
-  width: 40vw;
-}
-
-.bday-input-form {
-  /* font-size: calc(10px + 2vh); */
-}
-
-
 
 /* RESULTS */
 .results-display {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   align-items: center;
   margin-top: 8px;
 }
 
-#results-button {
-  visibility: hidden;
-}
-
-
 .times {
   width: 88vw;
   display: flex;
+  text-align: center;
   justify-content: space-between;
+}
+
+.today-time {
+  font-size: 48px;
 }
 
 .time-readout {
   color: red;
 }
 
+/* PROGRESS BAR THING */
 .meter { 
-	height: 24px;  /* Can be anything */
-    width: 72vw;
-	position: relative;
-	background: #555;
-	-moz-border-radius: 24px;
-	-webkit-border-radius: 24px;
-	border-radius: 24px;
-	padding: 8px;
-	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
-    margin: 16px;
+  height: 24px;  /* Can be anything */
+  width: 72vw;
+  position: relative;
+  background: #555;
+  -moz-border-radius: 24px;
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  padding: 8px;
+  box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+  margin: 16px;
 }
 
 .spanner {
@@ -87,8 +77,44 @@
   border-bottom-left-radius: 16px;
   background-color: rgb(43,194,83);
   box-shadow: 
-    inset 0 2px 9px  rgba(255,255,255,0.3),
-    inset 0 -2px 6px rgba(0,0,0,0.4);
+  inset 0 2px 9px  rgba(255,255,255,0.3),
+  inset 0 -2px 6px rgba(0,0,0,0.4);
   position: relative;
   overflow: hidden;
+}
+
+
+@media screen and (max-width: 668px) {
+
+  .bday-input-label {
+    font-size: 24px;
+  }
+
+  .bday-input-field {
+    font-size: 24px;
+  }
+
+  .birth-time {
+    font-size: 24px;
+  }
+
+  .birth-time .time-readout {
+    font-size: 16px;
+  }
+
+  .today-time {
+    font-size: 32px;
+  }
+
+  .death-time {
+    font-size: 24px;
+  }
+
+  .death-time .time-readout {
+    font-size: 16px;
+  }
+
+  .time-readout {
+    font-size: 24px;
+  }
 }

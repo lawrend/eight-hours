@@ -44,18 +44,12 @@ export default class ResultsDisplay extends Component {
 
           <div className='times'>
 
-            <div className='flex-container'>
               <BirthTime birthtime={this.calculateBirth(bday)} />
-            </div>
 
-            <div className='flex-container'>
               <PresentContainer bday={bday} />
-            </div>
 
 
-            <div className='flex-container'>
               <DeathTime diedtime={this.calculateDeath(bday)} />
-            </div>
 
           </div>
 
