@@ -21,7 +21,9 @@
 }
 
 .checker-input-field {
-  color: green;
+
+  color: #DFA949;
+  /* color: green; */
   font-size: 40px;
   margin: 16px;
   width: 40vw;

@@ -1,15 +1,17 @@
 /* CSS FOR HOME PAGE */
 
 .home-container {
-
   margin: 16px;
 }
 
 .home-kid {
+
   font-size: 40px;
 }
 
 .home-kid a {
+
+  color: #DFA949;
   text-decoration: none;
 }
 

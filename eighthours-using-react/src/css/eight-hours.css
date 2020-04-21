@@ -23,7 +23,9 @@
 }
 
 .bday-input-field {
-  color: green;
+
+  color: #DFA949;
+  /* color: green; */
   font-size: 40px;
   margin: 16px;
   width: 40vw;
@@ -51,7 +53,9 @@
 }
 
 .time-readout {
-  color: red;
+
+  color: #DFA949;
+  /* color: red; */
 }
 
 /* PROGRESS BAR THING */
@@ -75,7 +79,9 @@
   border-bottom-right-radius: 8px;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
-  background-color: rgb(43,194,83);
+
+  background-color: #F1E8DF;
+  /* background-color: rgb(43,194,83); */
   box-shadow: 
   inset 0 2px 9px  rgba(255,255,255,0.3),
   inset 0 -2px 6px rgba(0,0,0,0.4);
