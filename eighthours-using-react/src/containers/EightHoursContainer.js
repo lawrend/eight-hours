@@ -1,3 +1,4 @@
+// holds bday input
 import React, { Component } from 'react';
 import BdayInput from '../components/BdayInput.js'
 

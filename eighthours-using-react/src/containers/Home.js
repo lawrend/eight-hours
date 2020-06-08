@@ -1,3 +1,4 @@
+// page holding links to other pages like eight hours and ingredients checker
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/home.css';

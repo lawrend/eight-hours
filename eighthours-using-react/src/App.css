@@ -1,8 +1,7 @@
-
-
 body {
   margin: 0;
   background-color: #F1E8DF;
+  /* background-color: #EEE; */
   font-family: 'Manrope', sans-serif;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', */
   /*   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', */
@@ -13,7 +12,7 @@ body {
 
 .App {
 
-  background-color: rgb(247, 247, 248);
+  /* background-color: rgb(247, 247, 248); */
   height: 100%;
   font-size: 32px;
   text-align: left;
@@ -22,7 +21,7 @@ body {
 }
 
 .App-header {
-  background-color: #F1E8DF;
+  /* background-color: #F1E8DF; */
   min-height: 48px;
   display: flex;
   justify-content: space-between;
