@@ -1,16 +1,21 @@
 /* CSS FOR HOME PAGE */
 
 .home-container {
-  margin: 16px;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-around;
+  /* margin: 16px; */
+  text-align: center;
+  height: 96px;
+
 }
 
 .home-kid {
-
   font-size: 40px;
+  /* padding: 16px; */
 }
 
 .home-kid a {
-
   color: #DFA949;
   text-decoration: none;
 }
@@ -19,6 +24,22 @@
   color: #220;
 }
 
+.home-border-top {
+  background-color: #DFA949;
+  height: 8px;
+}
+
+.home-eight-hours {
+
+  background-color: #F5EFE6;
+
+}
+
+.home-ingredients-checker {
+
+  background-color: #F4ECE3;
+
+}
 @media screen and (max-width: 668px) {
 
   .home-kid {

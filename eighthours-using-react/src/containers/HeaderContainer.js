@@ -5,6 +5,9 @@ import '../App.css';
 export default props => (
         <header className="App-header" id="app-header">
           <div className="header-kids">
+            <div className="nav-item">
+            <Link to="/about">About</Link>
+          </div>
           </div>
           <div className="header-kids header-kids-name" id="squiggle-name">
             <Link to="/">squigglewerkz</Link>

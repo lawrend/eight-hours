@@ -6,7 +6,7 @@ import EightHoursContainer from './containers/EightHoursContainer.js';
 import ResultsDisplay from './containers/ResultsDisplay';
 import IngredientsCheckerHome from './containers/IngredientsCheckerHome.js';
 import ErrorRoute from './components/ErrorRoute';
-
+import About from './components/About';
 class Routes extends Component {
   render() {
     return (
@@ -16,6 +16,7 @@ class Routes extends Component {
         <Route path="/eight-hours" component={EightHoursContainer} />
         <Route path="/results/:month/:day/:year" component={ResultsDisplay} />
         <Route path="/ingredients-checker" component={IngredientsCheckerHome} />
+        <Route path="/about" component={About} />
         <Route component={ErrorRoute} />
       </Switch>
         )
