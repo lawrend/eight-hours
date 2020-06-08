@@ -1,3 +1,4 @@
+// Note usage of history and HashRouter below
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
